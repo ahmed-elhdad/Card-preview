@@ -1,0 +1,114 @@
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    font-family: "outfit";
+}
+body{
+    background-color: var(--Very-dark-blue-main-BG);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: min-content;
+        height: 450px;
+        padding: 30px 30px;
+        background-color: var(--Very-dark-blue-card-BG);
+        >img{
+            width: 200px;
+            height: 200px;
+        }
+        div+h3{
+            color: white;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+        }
+        h3+p{
+            font-size: 16px;
+            text-align: start;
+            color: var(--Soft-blue);
+            text-transform: capitalize;
+            font-weight: 100;
+        }
+        .ETH-and-time{
+            display: flex;
+            justify-content: space-between;
+            .ETH{
+                display: flex;
+                color: var(--Cyan);
+                align-items: center;
+                img{
+                    padding-right: 5px;
+                    height: 20px;
+                }
+                h4{
+                    font-size: 15px;
+                }
+            }
+            .time{
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                img{
+                    padding: 0 5px;
+                }
+                h3{
+                    color: var(--Soft-blue);
+                    font-size: 15px;
+                    font-weight: 300;
+                }
+            }
+
+        }
+        hr{
+            width: 90%;
+            color: var(--Soft-blue);
+        }
+        .porfile{
+            display: flex;
+            justify-content: start;
+            padding-top: 10px;
+            align-items: start;
+            img{
+                width: 30px;
+                border: 0.5px solid var(--White);
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+            p{
+                color: var(--Soft-blue);
+                text-transform: capitalize;
+                font-size: 14px;
+                padding-left: 10px;
+                span{
+                    color: var(--White);
+                }
+            }
+        }
+    }
+    .d-none{
+        display: none;
+    }
+    .rad-6{
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+}
+}

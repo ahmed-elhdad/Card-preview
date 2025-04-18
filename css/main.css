@@ -1,0 +1,116 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  font-family: "outfit";
+}
+
+body {
+  background-color: var(--Very-dark-blue-main-BG);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: -moz-min-content;
+  width: min-content;
+  height: 450px;
+  padding: 30px 30px;
+  background-color: var(--Very-dark-blue-card-BG);
+}
+body .container > img {
+  width: 200px;
+  height: 200px;
+}
+body .container div + h3 {
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+body .container h3 + p {
+  font-size: 16px;
+  text-align: start;
+  color: var(--Soft-blue);
+  text-transform: capitalize;
+  font-weight: 100;
+}
+body .container .ETH-and-time {
+  display: flex;
+  justify-content: space-between;
+}
+body .container .ETH-and-time .ETH {
+  display: flex;
+  color: var(--Cyan);
+  align-items: center;
+}
+body .container .ETH-and-time .ETH img {
+  padding-right: 5px;
+  height: 20px;
+}
+body .container .ETH-and-time .ETH h4 {
+  font-size: 15px;
+}
+body .container .ETH-and-time .time {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+body .container .ETH-and-time .time img {
+  padding: 0 5px;
+}
+body .container .ETH-and-time .time h3 {
+  color: var(--Soft-blue);
+  font-size: 15px;
+  font-weight: 300;
+}
+body .container hr {
+  width: 90%;
+  color: var(--Soft-blue);
+}
+body .container .porfile {
+  display: flex;
+  justify-content: start;
+  padding-top: 10px;
+  align-items: start;
+}
+body .container .porfile img {
+  width: 30px;
+  border: 0.5px solid var(--White);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+body .container .porfile p {
+  color: var(--Soft-blue);
+  text-transform: capitalize;
+  font-size: 14px;
+  padding-left: 10px;
+}
+body .container .porfile p span {
+  color: var(--White);
+}
+body .d-none {
+  display: none;
+}
+body .rad-6 {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}/*# sourceMappingURL=main.css.map */
